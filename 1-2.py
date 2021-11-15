@@ -5,7 +5,7 @@ def recursive(c, b):
     print("division:" + str(r.division()))
     print("multiplication:" + str(r.multiplication()))
     print("subtraction:" + str(r.subtraction()))
-    r.p()
+    
     
     
     
@@ -29,6 +29,6 @@ class Calculator:
         print(s)
         print(k)
 
-a:int = input("please input a\n")
-b:int = input("please input b\n")
+a = input("please input a\n")
+b = input("please input b\n")
 recursive(a,b)
