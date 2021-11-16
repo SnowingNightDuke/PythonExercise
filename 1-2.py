@@ -1,4 +1,5 @@
 # import beautifulsoup4 
+import timeit
 def recursive(c, b):
     r = Calculator(c,b)
     print("addtion:" + str(r.addition()))
@@ -7,9 +8,6 @@ def recursive(c, b):
     print("subtraction:" + str(r.subtraction()))
     
     
-    
-    
-
 class Calculator:
     def __init__(self,a,b):
         self.a = int(a)
@@ -22,12 +20,6 @@ class Calculator:
         return int(self.a/self.b)
     def subtraction(self) -> int:
         return self.a - self.b
-    def p(self):
-        
-        s=type(self.a)
-        k = type (self.b)
-        print(s)
-        print(k)
 
 a = input("please input a\n")
 b = input("please input b\n")
