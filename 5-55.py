@@ -14,6 +14,6 @@ def password_generator():
     for k in range(symbols_numbers):
         password.append(random.choice(string.punctuation))
     random.shuffle(password)
-    print(''.join((password)))
+    print(''.join(password))
 
 password_generator()
