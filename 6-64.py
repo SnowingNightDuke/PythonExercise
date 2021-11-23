@@ -1,6 +1,6 @@
 # Escaping the Maze
 # https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
-
+# Note: this part of code is using a built-in function: is_facing_north(), which means it is optimisable by only using basic operation funcitons. 
 def turn_right():
     turn_left()
     turn_left()
