@@ -7,7 +7,7 @@ def caesar_cipher():
     original_list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     shifted_list = []
     
-    if flag == "E" or "encrypt" or "Encrypt":
+    if flag == "E" or flag == "encrypt" or flag == "Encrypt":
         temp_list = []
         for item in original_list:
             if original_list.index(item) < shift:
@@ -21,7 +21,7 @@ def caesar_cipher():
             buffer.append(shifted_list[original_list.index(letter)])
         result = ''.join(buffer)
 
-    if flag == "D" or "decrypt" or "Decrypt":
+    if flag == "D" or flag == "decrypt" or flag == "Decrypt":
         temp_list = []
         for item in original_list:
             if original_list.index(item) < shift:
